@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Html, CSS, JS</title>
+</head>
+<body>
+    <!-- navbar starts -->
+    <nav>
+        <div>
+            <a href="/"><img class="logo" src="logo.png" alt="img"></a>
+        </div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact us</li>
+        </ul>
+    </nav>
+    <!-- navbar ends -->
+
+    <!-- hero starts -->
+    <section class="hero-secton">
+        <div class="left-card">
+            <h1>Welcome to E-form</h1>
+            <p class="hero-descrption">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, voluptatibus. Id odio fugiat voluptatem qui blanditiis libero in, officiis consequatur.</p>
+            <a class="hero-link" title="Instagram" href="http://instagram.com/awais_dev" target="_blank">IG</a>
+            <a class="hero-link" title="Github" href="http://github.com/awaisdev2" target="_blank">GH</a>
+            <a class="hero-link" title="Facebook" href="https://www.facebook.com/profile.php?id=100084660172027" target="_blank">FB</a>
+        </div>
+        <div class="right-card">
+            <img class="hero-img" src="avatar.png" alt="img">
+        </div>
+    </section>
+    <!-- hero ends -->
+
+    <!-- card starts -->
+    <main class="card-section">
+        <section class="card">
+            <div>
+                <img src="https://via.placeholder.com/300x150" alt="img">
+            </div>
+            <div>
+                <h2>E-form</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, recusandae.</p>
+            </div>
+        </section>
+        <section class="card">
+            <div>
+                <img src="https://via.placeholder.com/300x150" alt="img">
+            </div>
+            <div>
+                <h2>BuyA2z</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, recusandae.</p>
+            </div>
+        </section>
+        <section class="card">
+            <div>
+                <img src="https://via.placeholder.com/300x150" alt="img">
+            </div>
+            <div>
+                <h2>GymYog</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, recusandae.</p>
+            </div>
+        </section>
+    </main>
+    <!-- card ends -->
+
+    <!-- form starts -->
+    <form>
+        <div>
+            <label for="username">Name</label>
+            <input autocomplete='off' type="text" name="username" id="username" placeholder="Enter your Full Name">
+        </div>
+        <div>
+            <label style="margin-right: 15px;" for="age">Age</label>
+            <input autocomplete='off' type="text" name="age" id="age" placeholder="Enter your Age">
+        </div>
+        <div>
+            <label for="field">Field</label>
+            <input autocomplete='off' type="text" name="field" id="field" placeholder="Enter your Field">
+        </div>
+        <div>
+            <button onclick="getUserInfo()">Submit</button>
+        </div>
+    </form>
+    <!-- form ends -->
+
+    <!-- footer starts -->
+    <footer>
+        <div class="footer">
+            <a href="/"><img class="footer-img" src="logo.png" alt="img"></a>
+            <div style="display: flex; justify-content: space-around;">
+                <p class="footer-links">About</p>
+                <p class="footer-links">Contact</p>
+                <p class="footer-links">Services</p>
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <p>© 2019-2024 E-form. All rights are reserved</p>
+        </div>
+    </footer>
+    <!-- footer ends -->
+
+    <script src="script.js"></script>
+</body>
+</html>

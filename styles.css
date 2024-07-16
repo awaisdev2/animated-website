@@ -1,0 +1,254 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    margin: 5px;
+}
+
+input {
+    padding: 10px;
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+    outline: none;
+}
+
+input:focus {
+    border: 0 !important;
+    border-bottom: 1px solid black !important;
+    border-radius: 0px;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+form div {
+    margin: 10px;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 50px 10px 50px;
+    background-color: aliceblue;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between !important;
+}
+
+nav ul li { 
+    list-style: none;
+    margin: 0 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out, transform 0.1s ease-in-out;
+}
+
+nav ul li:hover {
+    background-color: aqua;
+    border-radius: 20px;
+}
+
+nav ul li:active {
+    transform: scale(0.8);
+}
+
+button {
+    border: 0;
+    padding: 10px 15px;
+    background-color: rgb(78, 78, 242);
+    transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out, box-shadow 0.3s ease-in-out, transform 0.1s ease-in-out;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(125, 70, 176);
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px black;
+}
+
+button:active {
+    transform: scale(0.8);
+}
+
+footer {
+    background-color: aliceblue;
+    margin-bottom: 0 !important;
+    padding: 15px 40px;
+}
+
+footer div p {
+    margin: 0;
+}
+
+.logo {
+    width: 120px;
+}
+
+.hero-secton {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(243, 243, 243);
+    align-items: center;
+    padding: 0px 50px;
+}
+
+.hero-link {
+    text-decoration: none;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+    transition: all 0.1s ease-in-out;
+    box-shadow: 0 0 10px black;
+}
+
+.left-card {
+    transition: all 0.5s ease-in-out;
+    animation: left-section 0.5s linear;
+}
+
+.right-card {
+    transition: all 0.5s ease-in-out;
+    animation: right-section 0.5s linear;
+}
+
+.hero-descrption {
+    max-width: 80%;
+}
+
+.hero-img {
+    height: auto;
+}
+
+.card-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px !important;
+    border-radius: 15px;
+    background-color: aliceblue;
+    padding: 10px 15px;
+    margin: 10px 15px;
+    transition: all 0.5s ease;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 40px black;
+}
+
+.card div img {
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.card div h2 {
+    margin: 2px;
+}
+
+.card div p {
+    margin: 5px;
+}
+
+.footer-img {
+    width: 150px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.footer div {
+    width: 20%;
+    margin-bottom: 40px;
+}
+
+.footer div p {
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.footer-links {
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-links:hover {
+    transform: translateY(-5px);
+}
+
+@keyframes left-section {
+    0%{
+        opacity: 0.2;
+        margin-left: -80px;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes right-section {
+    0%{
+        opacity: 0.2;
+        margin-right: -170px;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-secton {
+        display: block !important;
+    }
+    .hero-descrption {
+        width: 100% !important;
+    }
+    .hero-secton div {
+        width: 100% !important;
+    }
+    .footer div {
+        width: fit-content;
+    }
+    .footer {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 1000px) {
+    .hero-img {
+        display: none;
+    }
+    .left-card {
+        padding: 20px 10px;
+    }
+}
